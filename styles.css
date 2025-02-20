@@ -1,0 +1,57 @@
+/* Resetando margens e padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  background-color: #1c1c1c;
+  color: #fff;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 100px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  background: linear-gradient(45deg, #ff0044, #e6c229);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 0 4px 10px rgba(255, 0, 68, 0.5);
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Efeito de fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Adicionando o estilo de um fundo animado */
+body {
+  background: radial-gradient(circle, rgba(1, 1, 1, 1) 0%, rgba(44, 44, 44, 1) 100%);
+  animation: bgAnimation 15s infinite linear;
+}
+
+/* Animação de fundo */
+@keyframes bgAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
